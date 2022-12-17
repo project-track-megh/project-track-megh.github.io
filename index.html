@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NABC</title>
+    </head>
+    <body>
+        <h1>
+            NABC
+        </h1>
+
+        <p>
+            <b>Members:</b> Aditya Pandey, Tejasvi Kumar Singh, Vivek Kumar
+        </p>
+
+        <p>
+            <b>Problem Statement:</b> ‘At the time of sowing, predicting the risk/degree of extreme weather, as well as the future market rate for crops at harvest, to provide cropping recommendations to farmers’.
+        </p>
+
+        <p>
+            <b>Overview:</b> The purpose of this project is to develop prediction models in the domain of weather and price, to inform farmer decisions prior to sowing in terms of what types of crops they should choose. 
+            Specifically, the seasonal climate modeling will seek to model <u>rainfall</u> along with the <u>risk of extreme weather</u> events (such as drought/dry spells, storms and cyclones), across various future forward time frames (3mo, 6mo, 1yr). 
+            The price modeling will seek to provide an accurate snapshot of the future local market rate of various crops, making a guess as to the <u>favorability of prices</u> at the time of harvest.
+            This project shall then seek to deploy these models to inform agriculture specialists in making recommendations to local farmers, and further automate such forecasts via SMS delivery systems, targeting the Bahraich region of Uttar Pradesh.
+        </p>
+
+        <p>
+            <b>Need:</b> On the ground surveys in small villages of Bahraich have highlighted extreme weather as well as unfavorable pricing as some of the major factors impacting local farmers today. 
+            On the weather side, high irrigation costs as a result of unexpected dry spells, as well as crop destruction due to cyclonic events, were reported to increase costs and bring down yields for farmers. 
+            Furthermore, on the price side, farmers reported experiencing shockingly low prices at time to harvest, for often expensive commodities such as bananas, leading to economic losses. 
+            Due to both of these factors, farmers expressed regret in their choice: had they had the foresight to know of drought, they would grow crops with less watering requirements, and with price perhaps they would have chosen to grow something entirely else other than the banana.
+        </p>
+
+        <p>
+            <b>Approach:</b>
+            <ul>
+                <li>
+                    <b>Climate:</b> The approach here is to first understand existing mechanisms of ‘season forecasting’, as well as to collate a historical record of weather patterns. 
+                    It also seeks to first gain a sense of existing weather advisory, and whether ML could provide a competitive advantage in the first place. 
+                    It then involves bringing in expert advisors (such as Prof Foucad) in fields such as remote sensing, to scope out the degree to which local area patterns can be isolated. 
+                </li>
+
+                <li>
+                    <b>Price:</b> The approach here is to collate a historical record of mandi prices, as well as find price influencing factors such as month-to-month/seasonal changes, policy risk and changes, etc. 
+                    We’ll then look to build in a time series forecasting model with the addition of these parameters
+                </li>
+
+                <li>
+                    <b>Delivery:</b> The delivery of advice will be done in two stages. First, upon assessing model performance and outputs, we shall look to consult with local agri-specialists as to the corresponding recommendation. 
+                    Second, we shall look to see what provides value for farmers, be it just an SMS during sowing season forecasting the weather and price outlook, or a combined recommendation list on top of that. 
+                    Finally, we shall look to host and automate this process (model -> sms) as well as data pipelines for it, and look to pass on the maintenance of the project. 
+                </li>
+            </ul>
+        </p>
+            
+
+        <p>
+            <b>Benefits:</b> The benefits to farmers lie in the ability to have somewhat more information at the time of sowing: Our hope is to inform farmers to make crop choices resilient to expected weather and price conditions. 
+            Realistically even if this doesn’t influence their cropping patterns, it might drive other resilient behaviors such as anticipating a need to irrigate more or using line sowing to prevent against a risk of stormy weather. 
+        </p>
+
+        <p>
+            <b>Competition/Alternatives:</b> Currently, there is virtually no information a farmer gets for such patterns. 
+            While local word of mouth might still be somewhat informing price information, certainly weather information (even the ‘Agromet Advisory Services’ published by the Indian Meteorological department) don’t really make it to the ground. 
+        </p>
+
+
+    </body>
+
+</html>
